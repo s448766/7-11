@@ -332,6 +332,9 @@ function shootButton:touch( event )
     return true
 end
 
+badCharacter.isFixedRotation = true
+
+
 
 jumpButton:addEventListener( "touch", jumpButton )
 shootButton:addEventListener( "touch", shootButton )
