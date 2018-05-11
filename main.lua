@@ -100,7 +100,7 @@ local sequence_data = {
         start = 1,
         count = 10,
         time = 1000,
-        loopCount = 2,
+        loopCount = 1,
         sheet = sheetWalkingKnight
     }
 }
@@ -122,7 +122,7 @@ knight.isFixedRotation = true
 function rightArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character right
-        knight:setLinearVelocity( 800, 0 )
+        knight:setLinearVelocity( 500, 0 )
     knight:setSequence( "walk" )
         knight:play()
         knight.xScale = 1
@@ -134,7 +134,7 @@ end
  function leftArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character left
-        knight:setLinearVelocity( -800, 0 )
+        knight:setLinearVelocity( -500, 0 )
     knight:setSequence( "walk" )
         knight:play()
         knight.xScale = -1
